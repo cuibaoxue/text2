@@ -1,0 +1,22 @@
+public class Calc extends JApplet {
+ 
+ public static void main(String[] args) {
+  double first = 1.2;
+  double second = 2.4;
+  char operator = '+';
+  double result = 0;
+  
+  switch(operator) {
+  case '+': result = first + second; break;
+  case '-': result = first - second; break;
+  case '*': result = first * second; break;
+  case '/': result = first / second; break;
+  }
+  String a = "************************";
+  String s = String.format("%.2f %c %.2f = %.2f",first,operator,second,result);
+
+  System.out.println(a);
+  System.out.println(s);
+  System.out.println(a);
+ }
+}
